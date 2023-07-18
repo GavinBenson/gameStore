@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/components/games.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite App</title>
+</head>
+<body>
+<header class="header container">
+    <nav>
+        <ul class="header__menu2">
+            <li>
+                <a href="../index.html">
+                    <img src="/public/icon.png" class="header__img">
+                </a>
+            </li>
+            <li class="header__line"></li>
+            <li>
+                <a class="header__link" href="#Store">Store</a>
+            </li>
+            <li>
+                <a class="header__link" href="#">About</a>
+            </li>
+            <li>
+                <a class="header__link" href="#">Support</a>
+            </li>
+
+        </ul>
+
+        <ul class="header__menu">
+            <li>
+                <a href="#about" class="header__link">Sign-In / Register</a>
+            </li>
+            <li>
+                <a href="#cart" class="header__cart material-symbols-outlined">shopping_cart</a>
+            </li>
+            <li class="header__line"></li>
+            <li>
+                <button id="theme-toggle" class="header__sun material-symbols-outlined">light_mode
+                </button>
+            </li>
+        </ul>
+        <button class="header__bars material-symbols-outlined">menu
+        </button>
+    </nav>
+</header>
+<main>
+    <body>
+    <section class="games container">
+        <div class="games__container games__heading">
+            <ul class="games__menu2">
+                <li>
+                    <h2>
+                        All Games (4355)
+                    </h2>
+                </li>
+
+            </ul>
+
+            <form class="games__menu">
+                <span class="games__icon material-symbols-outlined">search</span>
+                <input class="search__input games__input" type="text" placeholder="Search store by title, publisher or tag">
+
+            </form>
+        </div>
+        <hr>
+        <div class="catalog__container container">
+
+            <div class="filter-bar collapsible-section">
+                <div class="collapsible-section">
+                    <label class="filter__dlc">
+                        <input class="checkbox__input" type="checkbox" />
+                        Hide DLCs and extras
+                    </label>
+                </div>
+
+                <div class="price-filter__content">
+                    <div class="filter__header">
+                        <h4>Price range</h4>
+                    </div>
+                    <div class="range-slider">
+                        <div class="range-slider__inputs">
+                            <label class="range-slider__label">
+                                <input class="range-slider__input" />
+                            </label>
+                            <span class="range-slider__separator">-</span>
+                            <label class="range-slider__label">
+                                <input class="range-slider__input" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Show only free games
+                    </label>
+                </div>
+
+                <div class="release collapsible-section">
+                    <div class="release__header">
+                        <h4>Release Status</h4>
+                    </div>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        New arrivals
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Upcoming
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Early access
+                    </label>
+                </div>
+
+                <div class="genre collapsible-section">
+                    <div class="genre__header">
+                        <h4>Genres</h4>
+                    </div>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Action
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Adventure
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Racing
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Role-playing
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Shooter
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Simulation
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Sports
+                    </label>
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" />
+                        Strategy
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="catalog__wrapper">
+                <div class="catalog__navigation">
+                    <div class="pagination">
+                        <button class="pagination__item">
+                            <span class="pagination__icon"></span>
+                        </button>
+                        <div class="pagination__inputWrap pagination__item">
+                            <input class="pagination__input" value="1" />
+                        </div>
+                        <span>of</span>
+                        <button class="pagination__item">
+                            <span>175</span>
+                        </button>
+                        <button class="pagination__item">
+                            <span class="pagination__icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="sort">
+
+                    </div>
+                </div>
+                <div class="catalog__productsGrid">
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="product-tile">
+                            <img src="https://images.gog-statics.com/0bd69a02f78359063bcba7966ed6941d0efbd74c9bdf3a04f938e862fed98961_product_tile_extended_432x243.webp">
+
+                            <div class="product-tile__title">
+                                <span class="product-title">Jagged Alliance 2</span>
+                            </div>
+                            <div class="product-tile__footer">
+                                <div class="price-discount">
+                                    <span>-80%</span>
+                                </div>
+                                <div class="price-value">
+                                    <span>$4.99</span>
+                                    <span>$0.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+    </body>
+
+</main>
+
+<script type="module" src="/main.js"></script>
+
+</body>
+</html>

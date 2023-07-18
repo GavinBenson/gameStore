@@ -1,0 +1,153 @@
+.games__container {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 1rem;
+
+}
+
+.games__menu {
+    gap: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.games__menu2 {
+    display: flex;
+    float: left;
+    gap: 2em;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+
+}
+.games ul {
+    list-style: none;
+}
+.search__input {
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 536px;
+    height: 25px;
+}
+.search__input {
+    border: var(--clr-indigo);
+}
+
+.search__input:focus .games__icon {
+    color: black;
+}
+
+input[type=text] {
+    padding: 10px;
+}
+hr {
+
+    border-top: 1px solid white;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+
+}
+.filter-bar label {
+    padding-top: 5px;
+}
+.filter-bar div {
+    margin-top: 1em;
+}
+
+.release {
+    display: flex;
+    flex-direction: column;
+}
+.genre {
+    display: flex;
+    flex-direction: column;
+}
+.pagination {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-top: 14px;
+}
+.catalog__navigation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pagination__item {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -3px;
+    font-size: 16px;
+}
+.pagination__input {
+    width: 20px;
+
+}
+.catalog__container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.filter-bar {
+    flex: 0 0 auto;
+    width: 450px;
+}
+
+.catalog__productsGrid {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 30% 30%;
+}
+.grid__item {
+    grid-gap: 24px;
+}
+.product-tile {
+    background-color: var(--clr-slate600);
+    height: 252px;
+    padding: 5px;
+}
+.product-tile__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end; /* Align items to the right */
+    margin-left: auto;
+}
+.product-tile__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    font-size: 16px;
+}
+.price-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.price-discount {
+    background-color: indigo;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
